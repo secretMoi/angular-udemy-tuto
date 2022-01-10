@@ -8,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 // export le component pour l'utiliser dans angular
 export class ServerComponent implements OnInit {
+  serverId: number = 10;
+  serverStatus: string = 'offline';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  getServerStatus() : string {
+    return this.serverStatus;
+  }
 }
