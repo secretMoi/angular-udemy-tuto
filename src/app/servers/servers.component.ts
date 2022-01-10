@@ -21,7 +21,7 @@ export class ServersComponent implements OnInit {
 
   // onMethod... means triggered by event
   onCreateServer() {
-    this.serverCreationStatus = 'Server created';
+    this.serverCreationStatus = 'Server created with name ' + this.serverName;
   }
 
   onUpdateServerName(event: Event) {
