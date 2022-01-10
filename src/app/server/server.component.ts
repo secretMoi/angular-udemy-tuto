@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 // indique à angular que c'est un component avec le décorateur @Component
 @Component({
-  selector: 'app-server', // balise pour utiliser ce component dans un fichier HTML
+  selector: '.app-server', // balise pour utiliser ce component dans un fichier HTML
   templateUrl: './server.component.html', // fichier HTML du component
   styleUrls: ['./server.component.css'] // fichiers CSS du component
 })
