@@ -1,1 +1,5 @@
-<p [ngStyle]="{backgroundColor: getColor()}">Server ID {{serverId}} is {{getServerStatus()}}</p>
+<!--apply css class only on online-->
+<p [ngStyle]="{backgroundColor: getColor()}"
+[ngClass]="{online: serverStatus === 'online'}" >
+  Server ID {{serverId}} is {{getServerStatus()}}
+</p>
